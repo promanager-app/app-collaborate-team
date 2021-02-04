@@ -1,0 +1,257 @@
+@import "../../styles/base.scss";
+
+.base-wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  width: 100%;
+  background: $white;
+  background-image: url('../../img/bg-main.svg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  user-select: none;
+}
+
+.auth-header {
+  color: $black;
+  background-color: $white;
+  padding: 1rem;
+  font-size: 20px;
+  text-align: center;
+  margin-bottom: 1rem;
+  font-weight: $medium;
+}
+
+.demo {
+  font-size: 14px;
+  margin-top: -0.25rem;
+  text-align: center;
+  width: 300px;
+  line-height: 1.25rem;
+}
+
+.code-mail {
+  font-family: $code;
+
+  &:hover {
+    cursor: pointer;
+    color: $primaryBlue;
+  }
+}
+
+.auth-form {
+  // width: 480px;
+  width: 90vw;
+  // height: 80vh;
+  background-color: #191A1D;
+  box-shadow: 0px 4px 5vw 0px rgba(0, 0, 0, 0.3);
+  border-radius: 0.6vw;
+  // border: 1px solid $gray;
+  display: flex;
+}
+
+.auth-left {
+  width: 65%;
+  border-radius: 0.6vw;
+  padding: 5vw 5vw;
+  // background-image: url('../../img/hero-bg.png');
+  // background-image: url('../../img/hero-bg.png'), linear-gradient(227.36deg, #545EE6 2.58%, rgba(120, 87, 254, 0.29) 117.46%);
+  background: linear-gradient(227.36deg, #545EE6 0.58%, rgba(120, 87, 254, 0.65) 117.46%), url('../../img/hero-bg.png');
+  background-size: cover;
+
+  .one-row {
+    color: #FEFDFE;
+    font-size: 2vw;
+    display: flex;
+    margin-bottom: 5vw;
+
+    .logo-text {
+      font-family: 'Montserrat';
+      font-weight: 500;
+      font-size: 1.5vw;
+      margin-left: 1vw;
+    }
+  }
+
+  .two-row {
+    color: #FEFDFE;
+    font-size: 4vw;
+    font-family: 'Montserrat';
+    font-weight: 600;
+    line-height: 5.2vw;
+  }
+
+  .three-row {
+    margin-top: 3.2vw;
+
+    .demo-video {
+      width: 14vw;
+      height: 4vw;
+      border-radius: 5vw;
+      background-color: #191A1D;
+      color: #FEFDFE;
+      cursor: pointer;
+
+      .watch-demo {
+        position: absolute;
+        padding: 1.35vw 4.65vw;
+        letter-spacing: 0.02vw;
+        font-size: 1.2vw;
+      }
+
+      .demo-video-circle {
+        position: absolute;
+        border-radius: 5vw;
+        margin: 0.75vw;
+        width: 2.5vw;
+        height: 2.5vw;
+        background-color: #37393C;
+
+        img {
+          margin-top: 0.725vw;
+          margin-left: 0.92vw;
+          width: 0.95vw;
+        }
+        i {
+          font-size: 1.8vw;
+          color: #FEFDFE;
+          margin-left: 0.4vw;
+          margin-top: 0.4vw;
+        }
+      }
+    }
+  }
+}
+
+.auth-right {
+  width: 35%;
+  padding: 5vw 3vw;
+
+  .row-one {
+    margin-bottom: 1vw;
+
+    .pie-logo {
+      width: 1.2vw;
+      margin-left: -0.2vw;
+    }
+  }
+
+  .row-two {
+    font-family: 'Montserrat';
+    font-weight: 800;
+    color: #FEFDFE;
+    font-size: 1.4vw;
+    letter-spacing: 0.03vw;
+    margin-bottom: 1vw;
+  }
+
+  .row-three {
+    font-family: 'Montserrat';
+    font-weight: 400;
+    color: $darkGray;
+    font-size: 1.05vw;
+    letter-spacing: 0.02vw;
+    text-align: justify;
+    margin-bottom: 3vw;
+  }
+}
+
+.auth-group {
+  margin-bottom: 1.8vw;
+}
+
+.auth-label {
+  width: 100%;
+  padding-right: 2rem;
+  margin-bottom: 0.75rem;
+  font-size: 14px;
+  color: $darkGray;
+  font-family: $code;
+}
+
+.auth-input {
+  background-color: transparent;
+  border: 0.1vw solid #7B7B7B;
+  border-radius: 0.3vw;
+  height: 3vw;
+  width: 100%;
+  outline: 0;
+  transition: all 0.25s ease 0s;
+  font-size: 1.1vw;
+  padding: 0 1vw;
+  letter-spacing: 0.05vw;
+  color: #bfbcbc;
+  text-indent: 2.8vw;
+
+  &:hover {
+    border-color: #979696;
+    transition: all 0.25s ease 0s;
+  }
+
+  &:focus {
+    border-color: #545EE6;
+    transition: all 0.25s ease 0s;
+  }
+}
+
+label i {
+  position: absolute;
+  color: #979696;
+  padding: 0.8vw 1.2vw;
+  font-size: 1.5vw;
+}
+
+.auth-error {
+  position: absolute;
+  margin-top: 0.2vw;
+  color: $red;
+  font-family: $code;
+  font-size: 0.82vw;
+  font-family: 'Montserrat';
+}
+
+.auth-button {
+  margin-top: 1vw;
+  height: 3vw;
+  color: #FEFDFE;
+  border: none;
+  border-radius: 0.3vw;
+  width: 100%;
+  font-size: 1.1vw;
+  background: linear-gradient(177.69deg, #5268F4 1.94%, rgba(120, 87, 254, 0.29) 132.51%);
+  transition: all 0.25s ease 0s;
+  font-family: 'Montserrat';
+  font-weight: 500;
+  outline: none;
+
+  &:hover {
+    background: linear-gradient(176.86deg, #5268F4 2.6%, rgba(120, 87, 254, 0.29) 97.41%);
+    cursor: pointer;
+    transition: all 0.25s ease 0s;
+  }
+}
+
+.bottom-group {
+  display: flex;
+  justify-content: center;
+  margin-top: 1.5vw;
+}
+
+.link {
+  color: $darkGray;
+  text-decoration: none;
+  transition: all 0.25s ease 0s;
+  font-family: 'Montserrat';
+  font-size: 1vw;
+  cursor: default;
+}
+
+.link-sign {
+  &:hover {
+    color: #545EE6;
+    transition: all 0.25s ease 0s;
+    cursor: pointer;
+  }
+}

@@ -1,0 +1,82 @@
+.not-found {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 100vh;
+  width: 80%;
+  margin: 0 auto;
+  font-family: "Oxygen Mono", monospace;
+  text-align: center;
+}
+
+.not-found a {
+  width: 100px;
+  padding: 1rem;
+  color: #fff;
+  background: #fc466b;
+  /* fallback for old browsers */
+  /* Chrome 10-25, Safari 5.1-6 */
+  background: -webkit-gradient(linear, left top, right top, from(#3f5efb), to(#fc466b));
+  background: linear-gradient(to right, #3f5efb, #fc466b);
+  /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+  border-radius: 0.5rem;
+  -webkit-animation: float 3s ease-in-out infinite;
+          animation: float 3s ease-in-out infinite;
+  -webkit-box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0);
+          box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0);
+  -webkit-transition: all 0.25s ease 0s;
+  transition: all 0.25s ease 0s;
+}
+
+.not-found a:hover {
+  opacity: 0.9;
+  -webkit-transition: all 0.25s ease 0s;
+  transition: all 0.25s ease 0s;
+  -webkit-box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
+          box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+@-webkit-keyframes float {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-transform: translatey(-10px);
+            transform: translatey(-10px);
+  }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+@keyframes float {
+  0% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+  50% {
+    -webkit-transform: translatey(-10px);
+            transform: translatey(-10px);
+  }
+  100% {
+    -webkit-transform: translatey(0px);
+            transform: translatey(0px);
+  }
+}
+
+.not-found p:nth-of-type(2) {
+  font-size: 12px;
+}
+/*# sourceMappingURL=404.css.map */

@@ -1,0 +1,94 @@
+.modal-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.projects-wrapper {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-top: 1rem;
+  width: 98%;
+}
+
+.project-icon {
+  height: 150px;
+  width: 150px;
+  -ms-flex-preferred-size: 150px;
+      flex-basis: 150px;
+  border-radius: 1rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 0.75rem;
+  border: 1px solid #e0e0e0;
+  margin: 1rem 1rem 1rem 0rem;
+  text-align: center;
+  -webkit-transition: all 0.25s ease 0s;
+  transition: all 0.25s ease 0s;
+  word-break: break-word;
+  color: #212121;
+  background-color: #fff;
+  font-family: "Oxygen Mono", monospace;
+}
+
+.project-icon:hover {
+  color: #1652f0;
+  border: 1px solid #1652f0;
+  -webkit-transition: all 0.25s ease 0s;
+  transition: all 0.25s ease 0s;
+  cursor: pointer;
+  -webkit-transform: translateY(-2.5px);
+          transform: translateY(-2.5px);
+}
+
+.project-icon:hover .project-info-button {
+  display: block;
+  -webkit-transition: all 0.25s ease 0s;
+  transition: all 0.25s ease 0s;
+}
+
+.project-name {
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 100px;
+}
+
+.project-info-button {
+  display: none;
+  margin-top: 1rem;
+  text-transform: uppercase;
+  width: 125px;
+  border: 1px solid #1652f0;
+  color: #1652f0;
+  font-size: 10px;
+  -webkit-transition: all 0.25s ease 0s;
+  transition: all 0.25s ease 0s;
+  padding: 0.5rem;
+  border-radius: 4px;
+}
+
+.project-info-button:hover {
+  background-color: #154de0;
+  color: #fff;
+  -webkit-transition: all 0.25s ease 0s;
+  transition: all 0.25s ease 0s;
+}
+/*# sourceMappingURL=Dashboard.css.map */
