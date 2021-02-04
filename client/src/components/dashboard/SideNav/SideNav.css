@@ -1,0 +1,140 @@
+.side {
+  min-width: 225px;
+  max-width: 225px;
+  height: 100vh;
+  border-right: 2px solid #fafafa;
+  background-color: #191f2b;
+  position: fixed;
+  z-index: 1;
+  margin-left: 0px;
+  -webkit-transition: margin-left 0.25s ease 0s;
+  transition: margin-left 0.25s ease 0s;
+}
+
+.side .top {
+  margin-top: 1.55rem;
+  padding-left: 0px;
+}
+
+.side .top li:hover {
+  cursor: pointer;
+}
+
+.side .top .hamburger-side-menu {
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  margin-right: 1rem;
+  -webkit-transition: all 0.25s ease 0s;
+  transition: all 0.25s ease 0s;
+  font-size: 20px;
+  margin-bottom: 1rem;
+}
+
+.side .top .hamburger-side-menu:hover {
+  cursor: pointer;
+}
+
+.side .top div,
+.side .top a {
+  color: #fff;
+  width: 100%;
+  display: block;
+  -webkit-transition: all 0.25s ease 0s;
+  transition: all 0.25s ease 0s;
+}
+
+.side .top div:hover,
+.side .top a:hover {
+  cursor: pointer;
+  -webkit-transition: all 0.25s ease 0s;
+  transition: all 0.25s ease 0s;
+}
+
+.side .top div li,
+.side .top a li {
+  padding: 0.75rem;
+  margin-bottom: 1rem;
+}
+
+.side .top div li:hover,
+.side .top a li:hover {
+  background-color: #222a37;
+}
+
+.side .top div li .icon,
+.side .top a li .icon {
+  display: inline-block;
+  font-size: 16px;
+  vertical-align: text-bottom;
+  padding-right: 1rem;
+  padding-left: 1rem;
+  padding-top: 0.25rem;
+}
+
+.invisibile {
+  margin-left: -225px;
+  -webkit-transition: margin-left 0.25s ease 0s;
+  transition: margin-left 0.25s ease 0s;
+}
+
+.active-page {
+  color: #fff !important;
+  background-color: #222a37;
+  -webkit-transition: all 0.25s ease 0s;
+  transition: all 0.25s ease 0s;
+}
+
+.bottom {
+  margin-top: 4rem;
+  color: #fff;
+  padding-left: 3.8rem;
+}
+
+.side-projects-header {
+  font-family: "Oxygen Mono", monospace;
+}
+
+.project-listings {
+  height: 305px;
+  overflow: scroll;
+}
+
+.project-listings::-webkit-scrollbar {
+  -webkit-appearance: none;
+  width: 4px;
+}
+
+.project-listings::-webkit-scrollbar-thumb {
+  border-radius: 1rem;
+  background-color: #1652f0;
+}
+
+.project-listing {
+  font-size: 14px;
+  padding-right: 1rem;
+  margin-top: 1.25rem;
+  -webkit-transition: all 0.25s ease 0s;
+  transition: all 0.25s ease 0s;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  overflow: hidden;
+  width: 150px;
+}
+
+.project-listing:hover {
+  cursor: pointer;
+}
+
+.project-listing a {
+  color: #fff;
+}
+
+.project-listing a:visited {
+  color: #fff;
+}
+/*# sourceMappingURL=SideNav.css.map */
